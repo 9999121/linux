@@ -1,0 +1,16 @@
+mikss@DESKTOP-ENMK206:~/Katalog$ cat selected.txt commands.txt
+26
+root         104  0.0  0.0   2888  1948 ?        Ss   13:08   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
+root         133  0.0  0.1  44096 29780 ?        Ss   13:08   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         234  0.0  0.2 123460 32684 ?        Ssl  13:08   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+  258  mkdir Katalog
+  259  cd Katalog
+  260  touch processes.txt
+  261  ps aux > processes.txt
+  262  cp processes.txt copy.txt
+  263  mkdir backup
+  264  mv copy.txt backup
+  265  wc copy.txt
+  266  echo 26 >> selected.txt
+  267  grep "/bin" processes.txt >> selected.txt
+  268  history 11 > commands.txt
