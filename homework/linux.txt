@@ -11,5 +11,5 @@ root         234  0.0  0.2 123460 32684 ?        Ssl  13:08   0:00 /usr/bin/pyth
   263  mkdir backup
   264  mv copy.txt backup
   265  wc -l copy.txt > selected.txt  
-  266  grep "/bin" processes.txt >> selected.txt
+  266  grep -n "/bin" processes.txt >> selected.txt
   267  history | tail -10 > commands.txt
